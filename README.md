@@ -1,31 +1,14 @@
-# Style Stage Source Sass
+# Overview
 
-> A minimal starter for Style Stage submissions that includes the source Sass used to create the base Style Stage theme, and the source HTML.
+This project was a team project. The purpose of this project was to receive a web page and style it without touching the HTML. This would force each of us to exercise our skills of using various CSS selectors and use our creativity to get the web page to look how we wanted it. We were also not allowed to use any JavaScript according to the rules the creator of web page made. I specifically made the header, footer and nab bar of the page. I also made the bottom part of the page with the three cards and the various buttons around it. Other parts of the page were made by my teammates.
 
-[Read the full guidelines](https://stylestage.dev/guidelines/) to ensure your final styles will be ready for inclusion in the showcase!
+* [Portfolio Demo Video](http://youtu.be/XNGKisPtV5A?hd=1)
+* [Go to Live live Site](https://mdowns1999.github.io/portfolio/)
 
-## To Use
+# Development Environment
 
-1. Fork or select "Use this Template"
-2. Once cloned to your computer, run `npm i` to install dependencies needed to compile the Sass
-3. Run `npm start` to launch a hot-reload server that watches for Sass changes.
+I used Visual Studio Code by Microsoft to program all my HTML and SASS/CSS.  I also used GitHub Pages to host my web page.
 
-The final stylesheet will be placed in `public/style.css`.
-
-You may alter anything and everything, but keep in mind that the final stylesheet should be unminified and ideally non-prefixed. All Style Stage submissions are parsed with `autoprefixer` during the publish build process, and unminified stylesheets are easier for visitors to learn from.
-
-> If you change the output stylesheet name, be sure to update the link to it in `index.html`
-
-### Publish to Github Pages
-This starter uses github actions to auto deploy `public` directory to `gh-pages` branch whenever there is a push to `main` branch.
-1. Go to repo settings, under Github Pages, select `gh-pages` as source.
-2. Go to https://username.github.io/stylestage-sass to see your published site.
-
-## Submitting Your Stylesheet
-
-Once you've created your stylesheet with this starter, publish this as a public repo and then you can use the GitHub link to the "raw" version of the `public/style.css` file for your final submission.
-
-If you choose to publish to github pages, you can use:
-https://username.github.io/stylestage-sass/style.css
-
-You will need to fork [the main Style Stage repo](https://github.com/5t3ph/stylestage) to add your stylesheet, as [explained in the FAQ](https://stylestage.dev/guidelines/#how-do-i-create-a-pull-request-pr).
+# Useful Websites
+* [W3 Schools Css](https://www.w3schools.com/Css/)
+* [Code Pen Cards by _niikhil](https://codepen.io/_niikhil/pen/MWpeqby)
