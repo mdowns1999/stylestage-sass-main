@@ -100,8 +100,9 @@
       }
       li:nth-child(1) {
         &:before {
-          background-image: url("images/test2.jpg");
+          background-image: url("images/darshan.jpg");
           background-repeat: no-repeat;
+          background-position: center;
           @include cardBeforeStyle();
         }
 
@@ -114,6 +115,7 @@
         &:before {
           background-image: url("images/christine.jpg");
           background-repeat: no-repeat;
+          background-position: center;
           @include cardBeforeStyle();
         }
 
@@ -126,6 +128,7 @@
         &:before {
           background-image: url("images/beatriceIMG.jpg");
           background-repeat: no-repeat;
+          background-position: center;
           @include cardBeforeStyle();
         }
 
