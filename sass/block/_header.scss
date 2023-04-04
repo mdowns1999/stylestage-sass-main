@@ -1,0 +1,87 @@
+@import "_body.scss";
+@import "../composition/theme";
+
+@mixin headerHover() {
+  color: white;
+  background-color: $hover-color;
+  transition-duration: $hover-transition-speed;
+}
+
+.skip-link {
+  display:none;
+}
+
+header {
+  text-align: center;
+  background-color: #ff92a6f8;
+  grid-column: 1/4;
+
+  a {
+    width: fit-content;
+    margin: 0 auto;
+    background-color: $accent-color;
+  }
+
+  .container {
+    // @include bodyWidth();
+    padding: 1em;
+
+    h1 {
+      font-size: clamp(2rem, 6.5vw, 9rem);
+      padding: 10px;
+    }
+
+    h2 {
+      font-size: clamp(1.5em, 2vw, 3em);
+      padding: 10px;
+    }
+
+    p {
+      // font-weight: bold;
+      padding: 10px;
+      margin: 15px;
+      a {
+        color: $accent-color;
+        transition: $hover-transition-speed;
+        background-color: transparent;
+        border-radius: .2em;
+
+        &:hover {
+          color: white;
+          background-color: transparent;
+        }
+      }
+    }
+
+    .link-github {
+      // font-weight: bold;
+      border-radius: 10px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      transition: $hover-transition-speed;
+
+      &:hover {
+        @include headerHover();
+        span svg {
+          fill: white;
+        }
+      }
+    }
+  }
+}
+
+svg {
+  width: 25px;
+  animation: turning-star 8s linear infinite;
+  transition: $hover-transition-speed;
+}
+
+@keyframes turning-star{
+  0%{transform: rotate(0deg);}
+  20%{transform: rotate(72deg);}
+  40%{transform: rotate(144deg);}
+  60%{transform: rotate(216deg);}
+  80%{transform: rotate(288deg);}
+  100%{transform: rotate(360deg);}
+}

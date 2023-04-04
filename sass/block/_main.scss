@@ -1,0 +1,31 @@
+@import "_body.scss";
+@import "../composition/_theme.scss";
+
+main, aside {
+    // @include bodyWidth();
+}
+
+.profile {
+    grid-column: 2/3;
+}
+
+#guidelines {
+    background-color: #ff92a6f8;
+    a {
+        color: $accent-color;
+        &:hover {
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    }
+}
+
+// #guidelines::before {
+//     content: '';
+//     background-color: $primary-color;
+//     position: absolute;
+//     height: 100%;
+//     width: 200vw;
+//     left: -100vw;
+//     z-index: -1;
+// }

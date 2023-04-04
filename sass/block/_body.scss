@@ -1,0 +1,82 @@
+@mixin bodyWidth() {
+    // padding: 0 clamp(10px, 15em, 20%);
+    width: 80%;
+    // padding: 0 15em;
+    margin: 0 auto;
+    @media screen and (min-width: 1000px) {
+        width: 1000px;
+    }
+}
+
+p {
+    margin-top: 30px;
+}
+
+.container:not(main > .container), article {
+    padding: 30px 0;
+}
+
+#about .container li {
+    list-style-position: inside;
+    padding-left: 15px;
+}
+
+li:not(section.container li) {
+    list-style-type: none;
+}
+
+body {
+    background: linear-gradient(rgba(236, 236, 236, 0.768), rgba(238, 238, 238, 0.752)), url("images/japanday.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main > .container {
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    @media screen and (min-width: 1000px) {
+        width: 100%;
+        grid-template-columns: 1fr 1000px 1fr;
+    }
+}
+
+aside.profile {
+    width: 100%;
+}
+
+main > .container > * {
+    grid-column: 2/3;
+}
+
+#contribute {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    @media screen and (min-width: 1000px){
+        grid-template-columns: 1fr 1000px 1fr;
+    }
+    & > * {
+        grid-column: 2/3;
+    }
+}
+
+blockquote {
+    border-radius: 1.3em;
+    border: .6em solid white;
+    p {
+        margin: auto;
+    }
+}
+
+#guidelines {
+    grid-column: 1/4;
+    
+    section {
+        max-width: 80%;
+        margin: 0 auto;
+        @media screen and (min-width: 1000px){
+            max-width: 1000px;
+        }
+    }
+}
+

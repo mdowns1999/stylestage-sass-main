@@ -1,0 +1,102 @@
+@import "_body.scss";
+@import "../composition/_theme.scss";
+
+
+blockquote{
+    padding: 10px;
+    background-color: #fcde9cf5;
+    
+    a {
+        color: $primary-color;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+
+article:first-of-type>section.container:first-child
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+
+}
+blockquote{
+    grid-column: 3/4;
+    height: fit-content;
+    padding: 20px;
+    justify-content: center;
+    grid-row: 1/ end 4;
+    border: solid black 1px;
+    align-items: center;
+    margin: auto 20px;
+}
+
+#about>section:first-of-type{
+    grid-column: 1/3;
+}
+
+section>p {
+    grid-column: 1/3;
+    justify-self: auto;
+    row-gap: auto;
+    margin-top: 1.5em;
+    
+}
+
+// Second Container
+
+section:nth-child(2){
+
+}
+
+section:nth-child(2)>h2,
+section:nth-child(2)>p:first-of-type,
+section:nth-child(2)>p:nth-child(3)
+{
+}
+
+section:nth-child(2)>ul{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+#guidelines{
+    // background-color: lavender;
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contribute{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+}
+
+
+@media only screen and (max-width: 420px) {
+
+    blockquote{
+        border: solid black 1px;
+        padding: 10px;
+        background-color: $accent-color;
+
+
+    }
+
+    #about{
+        padding-top: 30px;
+    }
+
+    #contribute{
+        padding-bottom: 20px;
+    }
+    
+  }
+  
